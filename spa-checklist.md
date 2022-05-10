@@ -2,6 +2,10 @@
 
 This is a checklist for browser-based Web App **without the backend** or with a 3rd-party backend.
 
+## Access
+ - [] **Only the production team should have access to production environments**
+ - [] **Developers may have access to logs and monitoring information**
+
 ## Legal
 
  - [ ] **The app is compliant according to the organisation standards**
@@ -16,11 +20,20 @@ This is a checklist for browser-based Web App **without the backend** or with a 
     - [ ] *The app is screenreader-friendly (OPTIONAL)*
     - [ ] *The app has keyboard navigation (OPTIONAL)*
 
+## Capacity planning
+
+- [ ] **The application has enough required resources for each component in the system**
+- [ ] **The application has configured all limits for the services. To avoid situations when because of the memory leak in one service you kill everything around.**
+
 ## Deployment
 
- - [ ] **The app is served from CDN or cookie-less subdomain**
+ - [ ] **The app is served from CDN or cookie-less subdomain (CloudFront, etc)**
  - [ ] **The app is served with forever cache headers for static assets**
  - [ ] **The app static resources are gzipped**
+ - [ ] **Code is automatically scanned, formatted, or linted according to coding standards. (Static code analysis)**
+ - [ ] **When engineers commit their changes, the system kicks off automated builds, tests, and deployment to a lower-level environment. (CI / Continuous integration)**
+ - [ ] **Deploying to production involves nothing more than approval and a click of a button. (CD / Continuous delivery)**
+ - [ ] *The automated deployment strategy has been documented. For example, strategies include blue-green, canary, or others to create safer zero-downtime deployments. (OPTIONAL)*
 
 ## Loading optimization
 
@@ -68,6 +81,11 @@ This is a checklist for browser-based Web App **without the backend** or with a 
     - [ ] [OWASP Top 10](https://www.owasp.org/index.php/OWASP_Top_Ten_Cheat_Sheet) Vulnerabilities
     - [ ] [Observatory](https://observatory.mozilla.org/)
     - [ ] [securityheaders.io](https://securityheaders.io/)
+- [ ] **Secrets are secured properly in a vault or secret store.**
+
+## Disaster recovery
+
+ - [ ] *The app have a disaster recovery plan with different levels of details and ETAs for example: how to recover one service, how to recover a database, how to recover the whole cluster, how to recover the whole region (OPTIONAL)*
 
 ## SEO
 
