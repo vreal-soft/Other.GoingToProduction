@@ -62,6 +62,8 @@ This is a checklist for browser-based Web App **without the backend** or with a 
  - [ ] *The app gathers metrics about usage behaviour (OPTIONAL)*
 
 ## Security
+
+ - [ ] **The app using [Secure encrypted storage](https://www.npmjs.com/package/secure-ls)**
  - [ ] **I have audited the system against:**
     - [ ] [OWASP Top 10](https://www.owasp.org/index.php/OWASP_Top_Ten_Cheat_Sheet) Vulnerabilities
     - [ ] [Observatory](https://observatory.mozilla.org/)
