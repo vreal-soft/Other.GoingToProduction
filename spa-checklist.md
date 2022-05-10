@@ -3,8 +3,8 @@
 This is a checklist for browser-based Web App **without the backend** or with a 3rd-party backend.
 
 ## Access
- - [] **Only the production team should have access to production environments**
- - [] **Developers may have access to logs and monitoring information**
+ - [ ] **Only the production team should have access to production environments**
+ - [ ] **Developers may have access to logs and monitoring information**
 
 ## Legal
 
@@ -40,8 +40,6 @@ This is a checklist for browser-based Web App **without the backend** or with a 
  - [ ] **The app can load it's assets in parallel (css, images and scripts)**
  - [ ] **The app does not hit [browser HTTP requests limit per host](http://stackoverflow.com/questions/985431/max-parallel-http-connections-in-a-browser)**
  - [ ] *The app uses modern formats of images (OPTIONAL)*
- - [ ] ~~My app uses icon sprites (OPTIONAL)~~
- - [ ] ~~My app loads all well-known javascript libraries from CDN~~
 
 ## Versioning
 
