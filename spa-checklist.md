@@ -65,8 +65,6 @@ This is a checklist for browser-based Web App **without the backend** or with a 
 ## Debugging
 
  - [ ] *Thrown exceptions are handled and passed to storage ([Sentry](https://sentry.io/), [Track.js](https://trackjs.com/), etc) (OPTIONAL)*
- - [ ] ~~Minified JavaScript files contain URL for source maps~~
- - [ ] ~~Error storage process sourcemaped files~~
 
 ## Tracking
 
