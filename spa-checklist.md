@@ -4,34 +4,36 @@ This is a checklist for browser-based Web App **without the backend** or with a 
 
 ## Legal
 
- - [ ] **App is compliant according to the organisation standards**
+ - [ ] **The app is compliant according to the organisation standards**
+ - [ ] **The app is compliant according to the organisation standards**
  - [ ] *Licences of app's 3rd-party dependencies are not violated (OPTIONAL)*
- - [ ] *App does not violate cryptography policies and laws (OPTIONAL)*
+ - [ ] *The app does not violate cryptography policies and laws (OPTIONAL)*
 
 ## Accessibility
  
- - [ ] *App is accessible (OPTIONAL)*
+ - [ ] *The app is accessible (OPTIONAL)*
     - [ ] *Colors and contrast are color-blind friendly OR there is a possiblity to switch to high-contrast mode (OPTIONAL)*
-    - [ ] *App is screenreader-friendly (OPTIONAL)*
-    - [ ] *App has keyboard navigation (OPTIONAL)*
+    - [ ] *The app is screenreader-friendly (OPTIONAL)*
+    - [ ] *The app has keyboard navigation (OPTIONAL)*
 
 ## Deployment
 
- - [ ] **App is served from CDN or cookie-less subdomain**
- - [ ] **App is served with forever cache headers for static assets**
- - [ ] **App static resources are gzipped**
+ - [ ] **The app is served from CDN or cookie-less subdomain**
+ - [ ] **The app is served with forever cache headers for static assets**
+ - [ ] **The app static resources are gzipped**
 
 ## Loading optimization
 
- - [ ] **App can load it's assets in parallel (css, images and scripts)**
- - [ ] **App does not hit [browser HTTP requests limit per host](http://stackoverflow.com/questions/985431/max-parallel-http-connections-in-a-browser)**
- - [ ] *App uses modern formats of images (OPTIONAL)*
+ - [ ] **The app can load it's assets in parallel (css, images and scripts)**
+ - [ ] **The app does not hit [browser HTTP requests limit per host](http://stackoverflow.com/questions/985431/max-parallel-http-connections-in-a-browser)**
+ - [ ] *The app uses modern formats of images (OPTIONAL)*
  - [ ] ~~My app uses icon sprites (OPTIONAL)~~
  - [ ] ~~My app loads all well-known javascript libraries from CDN~~
 
 ## Versioning
 
- - [ ] *My app has a cache-busting implemented (assets, object cache etc.) (OPTIONAL)*
+ - [ ] **The app manage title and description meta tags**
+ - [ ] *The app has a cache-busting implemented (assets, object cache etc.) (OPTIONAL)*
 
 ## Assets
 
@@ -42,9 +44,9 @@ This is a checklist for browser-based Web App **without the backend** or with a 
 
 ## Testing
 
- - [ ] **App does not have memory leaks**
- - [ ] **App is loading in less than 3 seconds**
- - [ ] *My app is passing performance tests with high grades (OPTIONAL)*
+ - [ ] **The app does not have memory leaks**
+ - [ ] **The app is loading in less than 3 seconds**
+ - [ ] *The app is passing performance tests with high grades (OPTIONAL)*
     - [ ] *[PageSpeed](https://developers.google.com/speed/pagespeed/)*
     - [ ] *[YSlow](http://yslow.org/)*
     - [ ] *Chrome Dev Tools Audit*
@@ -57,10 +59,18 @@ This is a checklist for browser-based Web App **without the backend** or with a 
 
 ## Tracking
 
- - [ ] *App gathers metrics about usage behaviour (OPTIONAL)*
+ - [ ] *The app gathers metrics about usage behaviour (OPTIONAL)*
 
 ## Security
  - [ ] **I have audited the system against:**
     - [ ] [OWASP Top 10](https://www.owasp.org/index.php/OWASP_Top_Ten_Cheat_Sheet) Vulnerabilities
     - [ ] [Observatory](https://observatory.mozilla.org/)
     - [ ] [securityheaders.io](https://securityheaders.io/)
+
+## SEO
+
+ - [ ] **The app manage title and description meta tags**
+ - [ ] *The app using Server Side Rendering (SSR) (OPTIONAL)*
+ - [ ] *The app using third-party Dynamic Rendering middleware ([Prerender.io](https://prerender.io/, etc) (OPTIONAL)*
+ - [ ] *The app manages social media meta tags (OPTIONAL)*
+ - [ ] *App 100% verified by Chrome Dev Tools (SEO) (OPTIONAL)*
