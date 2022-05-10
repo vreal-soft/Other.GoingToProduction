@@ -2,6 +2,10 @@
 
 This is a checklist for serverside of the Web App.
 
+## Access
+ - [] **Only the production team should have access to production environments**
+ - [] **Developers may have access to logs and monitoring information**
+
 ## Legal
 
  - [ ] **The app is compliant according to the organisation standards**
@@ -10,9 +14,10 @@ This is a checklist for serverside of the Web App.
 
 ## Resiliency 
 
-* [ ] ~~My application can retain reasonable functionality in isolation~~
 * [ ] **The application can not cause Cascading Failures to propagate through the system**
-* [ ] *The application can recover from being under heavy load (OPTIONAL)*
+* [ ] *Load tests are automated or occur on a regular cadence. You document and publish the results. (OPTIONAL)*
+* [ ] *Stress tests are automated or occur on a regular cadence. You document and publish the results. (OPTIONAL)*
+* [ ] *Once the applications have proven the ability to stand up to load and stress, chaos engineering is integrated to identify weak points and opportunities to reduce failures. (OPTIONAL)*
 * [ ] *The application can reestablish all lost connections (OPTIONAL)*
  
 ## Load balancing
@@ -69,21 +74,24 @@ This is a checklist for serverside of the Web App.
 * [ ] *I can run services in different independent Data Centers (OPTIONAL)*
 
 
-## Testing
-  
-* [ ] **I have performed stress tests for the application**
-* [ ] *I have performed network partitioning tests for the application (OPTIONAL)*
-
-
 ## Backuping
 
-* [ ] *I can restore all data from backups (OPTIONAL)*
+* [ ] *Owner can manually restore all data from backups (OPTIONAL)*
+* [ ] *Application rollback process is automated and tested (OPTIONAL)*
+
+
+## Disaster recovery
+
+* [ ] *The app have a disaster recovery plan with different levels of details and ETAs for example: how to recover one service, how to recover a database, how to recover the whole cluster, how to recover the whole region (OPTIONAL)*
 
 
 ## Security
 
 * [ ] **I have audited the system against OWASP Top 10 Vulnerabilities**
 * [ ] **I use TLS/SSL for all endpoints**
+* [ ] **Secrets are secured properly in a vault or secret store.**
+* [ ] **Each service or application requires proper authentication and authorization.**
+* [ ] **Databases are available only from the production network**
 * [ ] *I have added relevant security headers to app HTTP endpoints (OPTIONAL)*
 
   * `X-Frame-Options`
@@ -92,3 +100,24 @@ This is a checklist for serverside of the Web App.
   * `X-XSS-Protection`
   * `Strict-Transport-Security`
   * `Public-Key-Pins`
+
+## Capacity planning
+
+- [ ] **The application has enough required resources for each component in the system.**
+- [ ] **The application has configured all limits for the services. To avoid situations when because of the memory leak in one service you kill everything around.**
+
+## Deployment
+
+* [ ] **Code is automatically scanned, formatted, or linted according to coding standards. (Static code analysis)**
+* [ ] **When engineers commit their changes, the system kicks off automated builds, tests, and deployment to a lower-level environment. (CI / Continuous integration)**
+* [ ] **Deploying to production involves nothing more than approval and a click of a button. (CD / Continuous delivery)**
+* [ ] *The automated deployment strategy has been documented. For example, strategies include blue-green, canary, or others to create safer zero-downtime deployments. (OPTIONAL)*
+
+## Health checks
+ - [ ] **The app provides health check endpoints**
+ - [ ] *3rd party services health check should be either checked by application service itself or has his health check endpoints or needs to make some scripts that check the health of 3rd party service. (OPTIONAL)*
+
+## Support documentation
+
+* [ ] **Integration instructions for APIs are documented. ([Swagger](https://swagger.io/), etc)**
+* [ ] *A database schema represents the logical configuration of all or part of a relational database. ([dbdiagram.io](https://dbdiagram.io/), etc) (OPTIONAL)*
