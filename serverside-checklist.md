@@ -3,8 +3,8 @@
 This is a checklist for serverside of the Web App.
 
 ## Access
- - [] **Only the production team should have access to production environments**
- - [] **Developers may have access to logs and monitoring information**
+ - [ ] **Only the production team should have access to production environments**
+ - [ ] **Developers may have access to logs and monitoring information**
 
 ## Legal
 
