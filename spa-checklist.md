@@ -39,6 +39,7 @@ This is a checklist for browser-based Web App **without the backend** or with a 
  - [ ] **The app can load it's assets in parallel (css, images and scripts)**
  - [ ] **The app does not hit [browser HTTP requests limit per host](http://stackoverflow.com/questions/985431/max-parallel-http-connections-in-a-browser)**
  - [ ] *The app uses modern formats of images (OPTIONAL)*
+ - [ ] *The app uses lazy loading of components to optimize chunk size and load speed. [Lazy loading](https://reactjs.org/docs/code-splitting.html#reactlazy)*
 
 ## Versioning
 
