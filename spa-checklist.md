@@ -89,3 +89,7 @@ This is a checklist for browser-based Web App **without the backend** or with a 
  - [ ] *The app using third-party Dynamic Rendering middleware ([Prerender.io](https://prerender.io/), etc) (OPTIONAL)*
  - [ ] *The app manages social media meta tags (OPTIONAL)*
  - [ ] *App 100% verified by Chrome Dev Tools (SEO) (OPTIONAL)*
+
+## Support documentation
+
+* [ ] **The structure of the project and the description of the approaches are documented. (README.md)**
