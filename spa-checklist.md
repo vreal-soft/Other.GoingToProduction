@@ -9,7 +9,6 @@ This is a checklist for browser-based Web App **without the backend** or with a 
 ## Legal
 
  - [ ] **The app is compliant according to the organisation standards**
- - [ ] **The app is compliant according to the organisation standards**
  - [ ] *Licences of app's 3rd-party dependencies are not violated (OPTIONAL)*
  - [ ] *The app does not violate cryptography policies and laws (OPTIONAL)*
 
