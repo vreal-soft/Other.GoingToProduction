@@ -49,14 +49,14 @@ This is a checklist for browser-based Web App **without the backend** or with a 
 ## Assets
 
  - [ ] **Have a 404-page**
- - [ ] **Have a [maintenance page](https://www.smashingmagazine.com/2009/06/effective-maintenance-pages-examples-and-best-practices/)**
+ - [ ] *Have a [maintenance page](https://www.smashingmagazine.com/2009/06/effective-maintenance-pages-examples-and-best-practices/) (OPTIONAL)*
  - [ ] *Images support HDPI screens (Retina, etc) (OPTIONAL)*
 
 
 ## Testing
 
  - [ ] **The app does not have memory leaks**
- - [ ] **The app is loading in less than 3 seconds**
+ - [ ] *The app is loading in less than 3 seconds (OPTIONAL)*
  - [ ] *The app is passing performance tests with high grades (OPTIONAL)*
     - [ ] *[PageSpeed](https://developers.google.com/speed/pagespeed/)*
     - [ ] *[YSlow](http://yslow.org/)*
