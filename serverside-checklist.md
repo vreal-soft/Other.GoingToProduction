@@ -92,6 +92,8 @@ This is a checklist for serverside of the Web App.
 * [ ] **Secrets are secured properly in a vault or secret store.**
 * [ ] **Each service or application requires proper authentication and authorization.**
 * [ ] **Databases are available only from the production network**
+* [ ] **All  usernames for DBs or any other third party apps must be changed from the default** 
+* [ ] **All passwords must be not less then "strong" in this service [Password Strength Meter](https://www.passwordmonster.com/)**
 * [ ] *I have added relevant security headers to app HTTP endpoints (OPTIONAL)*
 
   * `X-Frame-Options`
