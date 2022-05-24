@@ -71,7 +71,7 @@ This is a checklist for serverside of the Web App.
 
 ## High Availability
 
-* [ ] *I can run services in different independent Data Centers (OPTIONAL)*
+* [ ] *I can run services in different independent Data Centers, Multi-AZ (OPTIONAL)*
 
 
 ## Backuping
