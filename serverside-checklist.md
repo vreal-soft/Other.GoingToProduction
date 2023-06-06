@@ -125,4 +125,4 @@ This is a checklist for serverside of the Web App.
 * [ ] *A database schema represents the logical configuration of all or part of a relational database. ([dbdiagram.io](https://dbdiagram.io/), etc) (OPTIONAL)*
 
 ## Infrastructure checks
-* [ ] Infrastrucutre repond to [best practices](https://roadmap.sh/best-practices/aws).
+* [ ] Infrastructure responds to [best practices](https://roadmap.sh/best-practices/aws).
